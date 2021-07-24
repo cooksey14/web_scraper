@@ -24,6 +24,5 @@ async fn get_html() -> Result<std::string::String, Box<dyn std::error::Error>> {
         .await?
         .text()
         .await?;
-    //println!("{:#?}", html);
     Ok(html)
 }
